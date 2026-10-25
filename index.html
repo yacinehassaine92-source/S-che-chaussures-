@@ -858,7 +858,7 @@
   <!-- ================= SCRIPT & DYNAMIC LOGIC ================= -->
   <script>
     // Embedded Google Apps Script Webhook
-    const GOOGLE_SHEET_WEBHOOK = "https://script.google.com/macros/s/AKfycbwYmve6L1IvlX4enx-nwzAJxj79FepM06J0flr1KUi44EevcszVriLpgUrDle9s5WlEWA/exec";
+    const GOOGLE_SHEET_WEBHOOK = "https://script.google.com/macros/s/AKfycbzd7Acqz9rV3eIqcHFXF-dU676-NJsxJ0X_znGf1k6LrzQv_2p7hKdjKZzpZBrH2MQP8w/exec";
     const STORE_WHATSAPP_NUMBER = "213659596907";
 
     let selectedPackage = {
@@ -1053,7 +1053,6 @@
       btn.disabled = true;
       btn.innerHTML = '<i class="fa-solid fa-spinner fa-spin"></i> جاري حفظ وتأكيد الطلب...';
 
-      // Send to Google Sheets via Webhook
       try {
         await fetch(GOOGLE_SHEET_WEBHOOK, {
           method: 'POST',
