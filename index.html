@@ -719,12 +719,18 @@
           <input type="text" id="clientAddress" required placeholder="مثال: وسط المدينة، قرب المسجد أو البلدية" class="form-control">
         </div>
 
-        <!-- ملخص الطلب -->
         <div class="summary-card">
           <div class="summary-row">
             <span>سعر العرض:</span>
             <span id="summaryPrice" style="font-weight: 800; color: var(--primary);">5,200 دج</span>
           </div>
+
+          <!-- السطر الجديد الخاص بمصاريف التوصيل -->
+          <div class="summary-row">
+            <span>مصاريف التوصيل:</span>
+            <span id="summaryShipping" style="font-weight: 800; color: #16a34a;">اختر الولاية أولاً</span>
+          </div>
+
           <div class="summary-row">
             <span>شركة التوصيل:</span>
             <span style="font-weight: 800; color: #d97706;">ZR Express 🚚</span>
@@ -734,7 +740,6 @@
             <span>الدفع نقداً بعد الاستلام وتجربة المنتج 🛡️</span>
           </div>
         </div>
-
         <button type="submit" id="submitBtn" class="btn-submit">
           اضغط هنا لتأكيد طلبك الآن 🛍️
         </button>
